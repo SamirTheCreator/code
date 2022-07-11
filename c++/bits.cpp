@@ -21,15 +21,11 @@ int main(){
     cout << " == ";
     cout << power2(n);
     cout << "\n";
-    int x = 1;
+
+    int x = 4254;
     for (int k = 31; k >= 0; k--){
-        if (x & (1 << k)) {
-            for (int j = k; j >= 0; j--){
-                if (x & (j << 1)) cout << "1";
-                else cout << "0";
-            }
-            break;
-        }
+        if (x & (1 << k)) cout << "1";
+        else cout << "0";
     }
 
     // powerof2(int x) return true if x is the power of 2
